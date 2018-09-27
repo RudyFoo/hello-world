@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<SERVERS>
+	<UPDATEFTP>
+		<ADDRESS></ADDRESS>
+		<PORT></PORT>
+		<USER></USER>
+		<PASS></PASS>
+	</UPDATEFTP>
+	<PUSHFTP>
+		<ADDRESS></ADDRESS>
+		<PORT></PORT>
+		<USER></USER>
+		<PASS></PASS>
+	</PUSHFTP>
+	<MAIL></MAIL>
+	<SMS></SMS>
+</SERVERS>

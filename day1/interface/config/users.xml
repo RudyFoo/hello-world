@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<USERS>
+	<ADMIN>
+		<NAME></NAME>
+		<PASS></PASS>
+	</ADMIN>
+	<USER>
+		<NAME></NAME>
+		<PASS></PASS>
+		<CANCONFIG></CANCONFIG>
+		<CANSCHEDULE></CANSCHEDULE>
+		<CANDOWNLOAD></CANDOWNLOAD>
+	</USER>
+</USERS>

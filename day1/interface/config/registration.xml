@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--registration configuration-->
+<Registration>
+	<DeviceSerial></DeviceSerial>
+	<GPSCardState></GPSCardState>
+	<SupportL2></SupportL2>
+	<SupportL2C></SupportL2C>
+	<SupportL5></SupportL5>
+	<SupportGLONASS></SupportGLONASS>
+</Registration>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Schedule>
+	<Records>
+		<Plan>
+			<Name></Name>
+			<DataType></DataType>
+			<StartTime></StartTime>
+			<EndTime></EndTime>
+			<FilenameStyle></FilenameStyle>
+			<Period></Period>
+			<Scheme></Scheme>
+		</Plan>
+	</Records>
+	<FTPUpload>
+		<Plan>
+			<RecordSchName></RecordSchName>
+			<Scheme></Scheme>
+		</Plan>
+	</FTPUpload>
+</Schedule>

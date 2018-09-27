@@ -1,0 +1,3 @@
+src/HemConf.dd src/HemConf.o: src/HemConf.cpp headers/HemConf.hpp \
+ headers/share.hpp headers/oemConf.hpp ../util/inc/fifo.h \
+ ../util/inc/IPCInfoUtil.h ../util/inc/fifo.h headers/share.hpp

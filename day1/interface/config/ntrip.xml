@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<NTRIP>
+	<CONNECTION>
+		<NAME>AAABBB</NAME>
+		<IP></IP>
+		<PORT></PORT>
+		<MODE></MODE>
+		<RETRY></RETRY>
+		<MOUNTPOINT></MOUNTPOINT>
+		<PASS></PASS>
+		<DATATYPE></DATATYPE>
+	</CONNECTION>
+</NTRIP>

@@ -1,0 +1,7 @@
+command/command.dd command/command.o: command/command.cpp \
+ headers/command.hpp headers/xmlconf.hpp ../tinyxml/tinyxml.h \
+ ../tinyxml/tinystr.h ../Crypto/aes/aesFunc.h headers/keywords.hpp \
+ headers/oemConf.hpp headers/share.hpp ../util/inc/fifo.h \
+ headers/TrimbleConf.hpp ../util/inc/IPCInfoUtil.h ../util/inc/fifo.h \
+ headers/NovConf.hpp headers/UnicoreConf.hpp headers/HemConf.hpp \
+ headers/util.hpp ../Crypto/sm4/sm4Func.h headers/util.hpp

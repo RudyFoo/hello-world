@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="interface" />
+		<Option makefile_is_custom="1" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/interface" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-DDEBUG" />
+					<Add directory="headers" />
+				</Compiler>
+				<Linker>
+					<Add option="-lpthread" />
+					<Add library="curl/libcurl.so.4.3.0" />
+					<Add directory="headers" />
+					<Add directory="xmlconf" />
+					<Add directory="tinyxml" />
+					<Add directory="src" />
+					<Add directory="command" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/interface" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="armelfgcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="headers" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-lpthread" />
+					<Add library="curl/libcurl.arm.so.4.3.0" />
+					<Add directory="headers" />
+					<Add directory="xmlconf" />
+					<Add directory="tinyxml" />
+					<Add directory="src" />
+					<Add directory="command" />
+				</Linker>
+			</Target>
+			<Target title="Release(335x)">
+				<Option output="bin/Release(335x)/interface" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release(335x)/" />
+				<Option type="1" />
+				<Option compiler="arm-elf-gcc" />
+				<Compiler>
+					<Add option="-DNSC200" />
+					<Add directory="headers" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-lpthread" />
+					<Add option="-lm" />
+					<Add library="curl/libcurl.arm.so.4.3.0" />
+					<Add library="wireless/iwlib.so" />
+					<Add directory="headers" />
+					<Add directory="xmlconf" />
+					<Add directory="tinyxml" />
+					<Add directory="src" />
+					<Add directory="command" />
+				</Linker>
+				<MakeCommands>
+					<Build command="$make -f $makefile" />
+					<CompileFile command="$make -f $makefile $file" />
+					<Clean command="$make -f $makefile clean" />
+					<DistClean command="$make -f $makefile distclean$target" />
+					<AskRebuildNeeded command="$make -q -f $makefile" />
+					<SilentBuild command="$make -f $makefile &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="Release(Zenith100)">
+				<Option output="bin/Release(Zenith100)/interface" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release(Zenith100)/" />
+				<Option type="1" />
+				<Option compiler="arm-elf-gcc" />
+				<Compiler>
+					<Add option="-DNSC200" />
+					<Add directory="headers" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-lpthread" />
+					<Add library="curl/libcurl.arm.so.4.3.0" />
+					<Add directory="headers" />
+					<Add directory="xmlconf" />
+					<Add directory="tinyxml" />
+					<Add directory="src" />
+					<Add directory="command" />
+				</Linker>
+			</Target>
+			<Target title="Release(NET20PLUS)">
+				<Option output="bin/Release(NET20PLUS)/interface" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release(NET20PLUS)/" />
+				<Option type="1" />
+				<Option compiler="arm-elf-gcc" />
+				<Compiler>
+					<Add option="-DNSC200" />
+					<Add option="-DNET20_PLUS" />
+					<Add directory="headers" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-lpthread" />
+					<Add option="-lm" />
+					<Add library="curl/libcurl.arm.so.4.3.0" />
+					<Add library="wireless/iwlib.so" />
+					<Add directory="headers" />
+					<Add directory="xmlconf" />
+					<Add directory="tinyxml" />
+					<Add directory="src" />
+					<Add directory="command" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="Makefile" />
+		<Unit filename="command/cmd_get.cpp" />
+		<Unit filename="command/cmd_list.cpp" />
+		<Unit filename="command/cmd_save.cpp" />
+		<Unit filename="command/cmd_set.cpp" />
+		<Unit filename="command/cmd_update.cpp" />
+		<Unit filename="command/command.cpp" />
+		<Unit filename="command/keywords.cpp" />
+		<Unit filename="headers/24cXX.h" />
+		<Unit filename="headers/HemConf.hpp" />
+		<Unit filename="headers/NovConf.hpp" />
+		<Unit filename="headers/TrimbleConf.hpp" />
+		<Unit filename="headers/UnicoreConf.hpp" />
+		<Unit filename="headers/command.hpp" />
+		<Unit filename="headers/iwlib.h" />
+		<Unit filename="headers/keywords.hpp" />
+		<Unit filename="headers/main.hpp" />
+		<Unit filename="headers/oemConf.hpp" />
+		<Unit filename="headers/procd.hpp" />
+		<Unit filename="headers/share.hpp" />
+		<Unit filename="headers/util.hpp" />
+		<Unit filename="headers/wireless.h" />
+		<Unit filename="headers/xmlconf.hpp" />
+		<Unit filename="src/24cXX.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/HemConf.cpp" />
+		<Unit filename="src/NovConf.cpp" />
+		<Unit filename="src/TrimbleConf.cpp" />
+		<Unit filename="src/UnicoreConf.cpp" />
+		<Unit filename="src/decrypt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/main.cpp" />
+		<Unit filename="src/oemConf.cpp" />
+		<Unit filename="src/procd.cpp" />
+		<Unit filename="src/util.cpp" />
+		<Unit filename="xmlconf/xmlconf.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
