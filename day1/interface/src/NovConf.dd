@@ -1,4 +1,0 @@
-src/NovConf.dd src/NovConf.o: src/NovConf.cpp headers/NovConf.hpp \
- headers/share.hpp headers/oemConf.hpp ../util/inc/fifo.h \
- ../util/inc/IPCInfoUtil.h ../util/inc/fifo.h headers/util.hpp \
- ../Crypto/sm4/sm4Func.h headers/share.hpp

@@ -1,4 +1,0 @@
-xmlconf/xmlconf.dd xmlconf/xmlconf.o: xmlconf/xmlconf.cpp \
- ../tinyxml/tinyxml.h ../tinyxml/tinystr.h headers/xmlconf.hpp \
- ../Crypto/aes/aesFunc.h headers/util.hpp ../Crypto/sm4/sm4Func.h \
- xmlconf/data.c

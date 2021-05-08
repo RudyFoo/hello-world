@@ -1,7 +1,0 @@
-src/TrimbleConf.dd src/TrimbleConf.o: src/TrimbleConf.cpp \
- src/../curl/curl.h src/../curl/curlver.h src/../curl/curlbuild.h \
- src/../curl/curlrules.h src/../curl/easy.h src/../curl/multi.h \
- src/../curl/curl.h src/../curl/types.h src/../curl/easy.h \
- headers/TrimbleConf.hpp headers/share.hpp headers/oemConf.hpp \
- ../util/inc/fifo.h ../util/inc/IPCInfoUtil.h ../util/inc/fifo.h \
- headers/share.hpp src/oem_conf.c

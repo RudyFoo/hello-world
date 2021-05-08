@@ -1,2 +1,0 @@
-src/oemConf.dd src/oemConf.o: src/oemConf.cpp headers/oemConf.hpp \
- headers/share.hpp ../util/inc/fifo.h

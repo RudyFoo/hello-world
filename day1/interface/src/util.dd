@@ -1,2 +1,0 @@
-src/util.dd src/util.o: src/util.cpp headers/24cXX.h headers/share.hpp \
- headers/util.hpp ../Crypto/sm4/sm4Func.h

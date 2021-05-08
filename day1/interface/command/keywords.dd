@@ -1,2 +1,0 @@
-command/keywords.dd command/keywords.o: command/keywords.cpp \
- headers/keywords.hpp
