@@ -5,7 +5,7 @@ gcc -o 2048 2048.c
 这里gcc编译器将2048.c翻译成了机器能执行的文件2048
 其实，这个翻译过程可以细分为4步，
 
-!{img}(https://images0.cnblogs.com/i/575572/201403/012257254603458.jpg)
+![img](https://images0.cnblogs.com/i/575572/201403/012257254603458.jpg)
 
 ```mermaid
 graph TD
