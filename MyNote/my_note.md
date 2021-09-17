@@ -19,11 +19,11 @@
 ```bash
 	git add file1.xxx file2.xxx #可以使用通配符*
 	git commit -m "add 2 file"  #写此次提交的简略信息
-	git push					#推送到github仓库
+	git push		    #推送到github仓库
 ```
 ### 1.1.4 分支操作
 ```bash
-	git checkout -b dev #创建并切换分支
+	git checkout -b dev 	#创建并切换分支
 ```
 ```bash
 	git branch -a 		#查看分支
@@ -33,7 +33,7 @@
 ```
 ### 1.1.5 操作git config
 ```bash
-	git config --show-origin -l 	#查看
+	git config --show-origin -l 		#查看
 ```
 ```bash
 	git config --global --edit 		#编辑
@@ -45,18 +45,19 @@
 ```
 ### 1.2.1 添加主仓库分支
 ```bash
-	git remote add -f upstream https://github.com/oaid/Tengine.git # -f 意思是去fetch
-	git fetch upstream  			# 要是remote add 不加fetch，需要执行这条指令才能后续操作pull
+	git remote add -f upstream https://github.com/oaid/Tengine.git  # -f 意思是去fetch
+	# git remote remove  upstream  					# 删除跟踪仓库
+	git fetch upstream  				# 要是remote add 不加fetch，需要执行这条指令才能后续操作pull
 	git remote -v 					#查看添加的源
 ```
 ### 1.2.2 同步主仓库分支
 
 ```bash
-	git log origin/master -1 && git log upstream/master -1 				#查看两仓库最新日志
+	git log origin/master -1 && git log upstream/master -1 		#查看两仓库最新日志
 ```
 
 ```bash
-	git pull upstream  					#从主仓库下载最新代码
+	git pull upstream  						#从主仓库下载最新代码
 	git push 							#把从主仓库下载下来的代码推送到自己的github 仓库
 ```
 
