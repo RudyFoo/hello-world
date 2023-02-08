@@ -138,7 +138,6 @@ INCLUDE = ./include/
 FOO = $(OBJ)
 ```
 
-
 系统自带变量：
 
 通常都是大写，比如`CC`，`PWD`，`CFLAG`，等等。
@@ -149,6 +148,46 @@ FOO = $(OBJ)
 `CFLAGS`：编译的时候使用的参数 –Wall –g -c
 `LDFLAGS` ：链接库使用的选项 –L -l
 变量的默认值可以修改，比如CC默认值是cc，但可以修改为gcc：CC=gcc
+
+
+
+### **设置软件版本号**
+
+```c
+//文件名 main.c
+#include<stdio.h>
+int main()
+{
+  printf("version=%s,%d\n",GCUNAME, NUM);
+}
+```
+
+ 
+
+```makefile
+#文件名Makfile
+CFLAGS += -DGCUNAME=\"$(ver1)\" -DNUM=$(num1)
+a.out:main.c
+	gcc main.c $(CFLAGS) -o a.out
+.PHONY:clean
+clean:
+	rm -rf *.o a.out
+	rm -rf $(TARGET)
+```
+
+执行：
+
+```bash
+make ver1="gcu200" num1=123 && ./a.out 
+```
+
+显示：
+
+> gcc main.c -DGCUNAME=\"gcu200\" -o a.out
+>
+> version=gcu200,123
+
+
 
 ## 8.自动变量
 
