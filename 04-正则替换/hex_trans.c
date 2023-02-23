@@ -89,17 +89,18 @@ int main(int argc, char **argv) {
             rc = pcre_exec(re, NULL, line, strlen(line), offset, 0, ovector, OVECCOUNT);
             if (rc <= 0) break;
 
-            // 输出匹配项之前的内容
+            // 输出匹配项之前的内容，以char为单位，有（ovector[0] - offset）个，ovector 为返回目标起始地址组成的数组。
             fwrite(line + offset, 1, ovector[0] - offset, fp_out);
 
-            // 将匹配项替换为float
+            // 将匹配项替换为float, 8是匹配到的字符串长度
             for (i = ovector[0]; i < ovector[1]; i += 8) {
                 char hex_str[9];
                 strncpy(hex_str, line + i, 8);
                 hex_str[8] = '\0';
                 // hex_str为匹配到的内容
-                int f32_str = hex2int(hex_str);
-                float value = *(float *)&f32_str;
+                int f32_str = hex2int(hex_str);    //大小端都兼容
+                float value = *(float *)&f32_str;  //大小端都兼容
+                // float value = *(float*)hex_str; //小端模式下会出错
                 fprintf(fp_out, "%g", value);
             }
 
